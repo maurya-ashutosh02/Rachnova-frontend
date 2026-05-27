@@ -243,7 +243,7 @@ export default function HomePage() {
                       <img
                         src={about.aboutImage}
                         alt="About Rachnova"
-                        className="max-w-full max-h-full object-contain"
+                        className="max-w-full max-h-full object-cover object-center"
                       />
                     </div>
                   ) : (
