@@ -159,7 +159,7 @@ export default function HomePage() {
               <div className="relative">
                 <div className="relative z-10">
                   {about.aboutImage ? (
-                    <img src={about.aboutImage} alt="About Rachnova" className="w-full h-96 object-cover" />
+                    <img src={about.aboutImage} alt="About Rachnova" className="w-full h-96 object-contain" />
                   ) : (
                     <div className="w-full h-96 bg-dark-900 border border-dark-800 flex items-center justify-center">
                       <div className="text-center">

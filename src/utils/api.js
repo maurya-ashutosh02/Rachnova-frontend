@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-// In production: use the Railway backend URL via environment variable
+
 // In development: use Vite proxy to localhost:5000
 const baseURL = import.meta.env.VITE_API_URL
   ? `${import.meta.env.VITE_API_URL}/api`
