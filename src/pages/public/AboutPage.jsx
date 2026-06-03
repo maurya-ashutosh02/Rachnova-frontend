@@ -196,11 +196,16 @@ export function AboutPage() {
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <div className="relative">
                 {about.founderImage ? (
-                  <img
-                    src={about.founderImage}
-                    alt={about.founderName}
-                    className="w-full h-80 object-cover object-top"
-                  />
+                  <div
+                    className="w-full overflow-hidden"
+                    style={{ aspectRatio: "4/3" }}
+                  >
+                    <img
+                      src={about.founderImage}
+                      alt={about.founderName}
+                      className="w-full h-full object-contain bg-dark-900"
+                    />
+                  </div>
                 ) : (
                   <div className="w-full h-80 bg-dark-800 border border-dark-700 flex items-center justify-center">
                     <div className="text-center">
